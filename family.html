@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family - My Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Paradiso', Paradiso;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #C64B8C;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: black;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin: 0 1rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    .family-section {
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    .family-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: black;
+    }
+
+    .family-section p {
+      font-size: 1.2rem;
+      color: black;
+      margin-bottom: 1.5rem;
+    }
+
+    .family-section .details {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .family-section .back-link {
+      display: inline-block;
+      text-decoration: none;
+      background: #C64B8C;
+      color: black;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-top: 2rem;
+      transition: background 0.3s;
+    }
+
+    .family-section .back-link:hover {
+      background: #C64B8C;
+    }
+
+    .family-table {
+      margin: 2rem auto;
+      width: 90%;
+      max-width: 800px;
+      border-collapse: collapse;
+    }
+
+    .family-table th,
+    .family-table td {
+      border: 1px solid black;
+      padding: 1rem;
+      text-align: left;
+    }
+
+    .family-table th {
+      background-color: #C64B8C;
+      color: black;
+    }
+
+    .family-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .family-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .family-images img {
+      width: 200px; /* Ganti ukuran sesuai kebutuhan */
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .family-images img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      background: #C64B8C;
+      color: black;
+      padding: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+      <div class="logo">Family</div>
+      <ul class="nav-links">
+        <li><a href="homepage.html">Homepage</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+  <section class="family-section">
+    <h1>Family</h1>
+    <p>"My family consists of 8 members, each with some information about them."</p>
+
+    <!-- Family Images Section -->
+    <div class="family-images">
+      <img src="family 1.jpeg" alt="Family 1">
+      <img src="family 2.jpeg" alt="Family 2">
+      <img src="family 3.jpeg" alt="Family 3">
+    </div>
+
+    <table class="family-table">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Names</th>
+          <th>Occupation/Education</th>
+          <th>Ages</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Azni Bin Ismail</td>
+          <td>Driver</td>
+          <td>52</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Yuhana Binti Azmi</td>
+          <td>Teacher</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Ammar Mua'llim Bin Azni</td>
+          <td>Degree</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Nur Aina Aqilah Binti Azni</td>
+          <td>Supervisor</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Nur Aina Rahila Binti Azni</td>
+          <td>Diploma</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Aidil Muhaimin Bin Azni</td>
+          <td>High School</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Aqil Mu'min Bin Azni</td>
+          <td>High School</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Nur Aina Humairah Binti Azni</td>
+          <td>Primary School</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="index.html" class="back-link">Back to Home</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Website. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+

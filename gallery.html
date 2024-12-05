@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: black;
+      background: #FFC1CC;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+    }
+
+    .navbar .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: black;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .navbar .nav-links a:hover {
+      color: black;
+    }
+
+    header {
+      text-align: center;
+      background: #C64B8C;
+      padding: 3rem 1.5rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    .gallery-container {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .gallery-container h2 {
+      font-size: 2rem;
+      color: black;
+      margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #C64B8C;
+      color: black;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+    }
+
+    footer a {
+      color: black;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Gallery</div>
+      <ul class="nav-links">
+        <li><a href="homepage.html">Homepage</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+        <img src="gallery header.jpg" alt="Gallery Header Image">
+  </header>
+
+  <section class="gallery-container">
+    <h2>Photo Collection</h2>
+
+<audio controls autoplay >
+  <source src="sound.mpeg" type="audio/mpeg">
+</audio>
+
+    <div class="gallery">
+      <img src="me.jpeg" alt="Gallery Image 1">
+      <img src="makanan.jpeg" alt="Gallery Image 2">
+      <img src="hadiah.jpeg" alt="Gallery Image 3">
+      <img src="pets.jpeg" alt="Gallery Image 4">
+      <img src="fav.jpeg" alt="Gallery Image 5">
+      <img src="saya.jpeg" alt="Gallery Image 6">
+      <img src="kedah.jpeg" alt="Gallery Image 7">
+      <img src="estetik.jpeg" alt="Gallery Image 8">
+      <img src="ootd.jpeg" alt="Gallery Image 9">
+      <img src="konsert.jpeg" alt="Gallery Image 10">
+     
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; IMD318 Personal Website</p>
+    <p><a href="#top">Back to Top</a></p>
+  </footer>
+</body>
+</html>

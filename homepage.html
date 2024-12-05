@@ -1,0 +1,266 @@
+-<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Homepage with Video & Image</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: black;
+      background: #FFC1CC;
+    }
+
+    header {
+      background: #C64B8C;
+      color: black;
+      text-align: center;
+      padding: 3rem 1.5rem;
+
+   }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+    }
+
+    .navbar .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: black;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .navbar .nav-links a:hover {
+      color: black;
+    }
+    
+    .hero-img {
+         width: 100%;
+         height: auto;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+    }
+
+    header .btn {
+      text-decoration: none;
+      background: #FFC1CC;
+      color: black;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header .btn:hover {
+      background: white;
+      color: Black;
+    }
+
+    /* Main Section */
+    section {
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: black;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      color: black;
+      margin-bottom: 1.5rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .video-container {
+      margin: 2rem auto;
+      max-width: 400px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .video-container iframe {
+      width: 200%;
+      height: 200px;
+      border: line;
+    }
+
+    .image-container {
+      margin: 3rem auto;
+      max-width: 200px;
+      height: 200px;
+
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 2rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      color: #C64B8C;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+
+
+.video-container {
+        display: flex;
+        justify-content: center; /* Centers the video horizontally */
+        align-items: center;     /* Centers the video vertically */
+        height: 100vh;           /* Ensures the container takes the full viewport height */
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 1rem 1rem;
+      background: #C64B8C;
+      color: black;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+    }
+
+    footer a {
+      color: black;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Homepage</div>
+      <ul class="nav-links">
+        <li><a href="homepage.html">Homepage</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+<section class="hero">
+    <img src="header 2.jpg" alt="Welcome Image" class="hero-img" />
+<marquee behavior="scroll" direction="left" scrollamount="15">
+ Hello and thank you for visiting my webpage!
+</marquee>
+</section>    
+
+<h1>Hey there!</h1>
+    <p>I'm so excited to share my story of my life with you.</p>
+    <a href="#about" class="btn">Get Started</a>
+  </header>
+
+  <section id="about">
+    <h2>Words of Wisdom</h2>
+    <p>"Everyday is a fresh start"</p>
+  </section>
+
+<div class="video-container">
+        <video controls width="1000">
+        <source src="video 2.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+  <section id="services">
+    <h2>Random Quotes</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Never Give Up</h3>
+        <p>"You will face many defeats in life, but never let yourself be defeated"</p>
+      </div>
+      <div class="card">
+        <h3>Live Your Life</h3>
+        <p>"Go confidently in the direction of your dreams! Live the life you've imagined"</p>
+      </div>
+      <div class="card">
+        <h3>Create Your Own Opportunities</h3>
+        <p>Opportunities don't happen, you create them"</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Here my Instagram:></h2>
+    <p>Anything want to share? Feel free to reach out!</p>
+    <a href="https://www.instagram.com/aryxyxh_" class="btn">click here</a>
+  </section>
+
+  <footer>
+    <p>&copy; IMD318 Personal Website</p>
+    <p><a href="#top">Back to Top</a></p>
+  </footer>
+</body>
+</html>
